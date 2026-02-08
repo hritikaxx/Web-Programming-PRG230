@@ -19,14 +19,28 @@ body {
     color: #333;
 }
 
+/* 12 Column Grid Container */
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Mobile first - all elements span full width */
+.container > * {
+    grid-column: col-start / span 12;
+}
+
 /* Navbar */
 .navbar {
     background-color: #C98A5B;
+    padding: 0;
 }
 
 .nav-inner {
-    max-width: 1200px;
-    margin: auto;
     padding: 16px 24px;
     display: flex;
     justify-content: space-between;
@@ -53,23 +67,16 @@ body {
     text-decoration: none;
     padding: 8px 14px;
     border-radius: 20px;
-    transition: 0.3s;
 }
 
 .navbar ul li a:hover {
     background-color: rgba(255,255,255,0.25);
 }
 
-/* Layout */
-.container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 40px 20px;
-}
-
+/* Hero */
 .hero {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 h1 {
@@ -88,20 +95,12 @@ p {
     line-height: 1.7;
 }
 
-/* Pets */
-.pets-container {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 20px;
-}
-
+/* Pet Cards - Mobile first (480px and less = 1 per row = 12 columns) */
 .pet-card {
-    grid-column: span 12;
     background: white;
     border-radius: 20px;
     padding: 16px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-    transition: transform 0.2s, box-shadow 0.2s;
     display: flex;
     flex-direction: column;
 }
@@ -143,7 +142,6 @@ p {
     padding: 8px 18px;
     border-radius: 20px;
     font-size: 14px;
-    transition: 0.3s;
 }
 
 .btn:hover {
@@ -151,19 +149,18 @@ p {
 }
 
 /* Info sections */
-.info-section {
+.info {
     background: white;
     padding: 30px;
     border-radius: 20px;
-    margin-top: 50px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.05);
 }
 
-.info-section ul {
+.info ul {
     margin-left: 20px;
 }
 
-.info-section li {
+.info li {
     margin-bottom: 8px;
 }
 
@@ -173,10 +170,9 @@ p {
     color: white;
     text-align: center;
     padding: 20px;
-    margin-top: 60px;
+    border-radius: 10px;
 }
 
-/* Responsive */
 @media (min-width: 481px) and (max-width: 760px) {
     .pet-card {
         grid-column: span 6;
@@ -200,6 +196,8 @@ p {
         margin: 8px 0;
     }
 }
+
+/* Pet Detail Pages */
 .pet-detail {
     max-width: 750px;
     margin: 50px auto;
@@ -216,18 +214,17 @@ p {
     margin-bottom: 4px;
 }
 
+.pet-detail img {
+    max-height: 300px;
+    border-radius: 18px;
+    display: block;
+    margin: 0 auto;
+}
+
 .pet-subtitle {
     text-align: center;
     color: #777;
     margin-bottom: 20px;
-}
-
-.pet-detail img {
-    max-height: 300px;
-    border-radius: 18px;
-   display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .pet-info {
@@ -265,21 +262,6 @@ p {
     font-size: 15px;
 }
 
-.price {
-    font-size: 26px;
-    font-weight: 600;
-    color: #C98A5B;
-    margin-bottom: 10px;
-}
-
-.donation-note {
-    font-size: 14px;
-    color: #666;
-    background: #f6efe7;
-    padding: 14px;
-    border-radius: 12px;
-}
-
 .back-btn {
     display: inline-block;
     margin-top: 10px;
@@ -289,13 +271,13 @@ p {
     padding: 10px 22px;
     border-radius: 22px;
     font-size: 14px;
-    transition: 0.3s;
 }
 
 .back-btn:hover {
     opacity: 0.9;
 }
 
+/* Contact Page */
 .contact-container {
     max-width: 750px;
     margin: 50px auto;
@@ -312,32 +294,6 @@ p {
     margin-bottom: 8px;
 }
 
-.contact-container .pet-subtitle {
-    text-align: center;
-    color: #777;
-    margin-bottom: 30px;
-    font-size: 16px;
-}
-
-.contact-container .pet-info {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px 20px;
-    background: #faf7f4;
-    padding: 20px;
-    border-radius: 16px;
-    margin-bottom: 30px;
-}
-
-.contact-container .pet-info div {
-    font-size: 15px;
-    color: #555;
-}
-
-.contact-container .pet-info b {
-    color: #6b3e2e;
-}
-
 .contact-container form {
     display: flex;
     flex-direction: column;
@@ -350,14 +306,12 @@ p {
     border: 1px solid #ccc;
     border-radius: 14px;
     font-size: 15px;
-    resize: vertical;
 }
 
 .contact-container form input:focus,
 .contact-container form textarea:focus {
     outline: none;
     border-color: #C98A5B;
-    box-shadow: 0 0 6px rgba(201,138,91,0.3);
 }
 
 .contact-container form button {
@@ -370,7 +324,6 @@ p {
     font-size: 14px;
     border: none;
     cursor: pointer;
-    transition: 0.3s;
 }
 
 .contact-container form button:hover {
