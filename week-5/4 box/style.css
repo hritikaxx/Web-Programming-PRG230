@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 .page {
     min-height: 100vh;
     display: flex;
@@ -7,14 +11,14 @@
 .header {
     width: 100%; 
     padding: 10px;
-    background-color: #2E3E77;
+    background-color: skyblue;
     color:beige;
     text-align: center;
 }
 .footer {
     width: 100%;
     padding: 10px;
-    background-color: #2E3E77;
+    background-color: skyblue;
     color:beige;
     text-align: center;
 }
@@ -30,8 +34,8 @@
 
 .box {
     width: 25%;
-    height: 130px;
-    background-color: #E6E9F5;
+    height: 250px;
+    background-color: beige;
     border-radius: 12px;
     display: flex;
     align-items: center;
