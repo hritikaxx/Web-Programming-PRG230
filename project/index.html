@@ -3,168 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-        <style>
-        body {
-            background-color: #f9f9f9;
-        }
-
-        h1 {
-            color: #333;
-            text-align: center;
-        }
-    </style>
     <title>Paws - Pet Adoption</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<div class="container">
-
-    <div class="navbar">
+<header class="navbar">
+    <div class="nav-inner">
         <div class="logo">PAWS</div>
-        <ul>    
-            <li><a href="#home">Home</a></li>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
             <li><a href="#pets">Pets</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="contactpage.html">Contact</a></li>
         </ul>
     </div>
+</header>
 
-    <h1 id="home">Paws - Pet Adoption Center</h1>
-    <p style="color: #555; font-size: 16px; text-align: center;">
-        Welcome to <b>Paws</b>, a non-profit pet adoption center dedicated to rescuing
-        and rehoming abandoned animals. <br> 
-        Click on a pet below to view details. 
-    </p>
+<main class="container">
 
-    <hr>
+    <section class="hero" id="home">
+        <h1>Paws – Pet Adoption Center</h1>
+        <p>
+            Welcome to <b>Paws</b>, a non-profit pet adoption center dedicated to rescuing
+            and rehoming abandoned animals. Click on a pet below to view details.
+        </p>
+    </section>
 
-    <h2 id="pets">Pets Available for Adoption</h2>
+    <section>
+        <h2 id="pets">Pets Available for Adoption</h2>
 
-    <div class="pets-container">
-    <div class="pet-card">
-    <a href="max.html">
-        <img src="https://i.pinimg.com/736x/e6/25/1f/e6251f33cbdb72f463e8a78575d596c4.jpg" height="200">
-    </a>
-    <p>
-        Name: Max <br>
-        Age: 2 Years <br>
-        Breed: Labrador <br>
-        Personality: Playful, friendly, and active
-    </p>
-    </div>
+        <div class="pets-container">
 
-    <div class="pet-card">
-    <a href="moon.html">
-        <img src="https://i.pinimg.com/1200x/c4/10/3e/c4103e72b3052ce73f2ce02c5793131f.jpg" height="200">
-    </a>
-    <p>
-        Name: Moon <br>
-        Age: 5 Years <br>
-        Breed: Pug <br>
-        Personality : Friendly, shy and gentle
-    </p>
-    </div>
+            <div class="pet-card">
+                <a href="max.html">
+                    <img src="https://i.pinimg.com/736x/e6/25/1f/e6251f33cbdb72f463e8a78575d596c4.jpg" alt="Max the Labrador">
+                </a>
+                <h3>Max</h3>
+                <ul>
+                    <li><b>Age:</b> 2 Years</li>
+                    <li><b>Breed:</b> Labrador</li>
+                    <li><b>Personality:</b> Playful, friendly, active</li>
+                </ul>
+                <a href="max.html" class="btn">View Details</a>
+            </div>
 
-    <div class="pet-card">
-<a href="tommy.html">
-        <img src="https://i.pinimg.com/736x/29/f7/00/29f7007bdf91df2385e0394b60ed0568.jpg" height="200">
-    </a>
-    <p>
-        Name: Tommy <br>
-        Age: 4 Years <br>
-        Breed: Mixed <br>
-        Personality : Friendly and loving
-    </p>
-    </div>
+            <div class="pet-card">
+                <a href="moon.html">
+                    <img src="https://i.pinimg.com/1200x/c4/10/3e/c4103e72b3052ce73f2ce02c5793131f.jpg" alt="Moon the Pug">
+                </a>
+                <h3>Moon</h3>
+                <ul>
+                    <li><b>Age:</b> 5 Years</li>
+                    <li><b>Breed:</b> Pug</li>
+                    <li><b>Personality:</b> Friendly, shy, gentle</li>
+                </ul>
+                <a href="moon.html" class="btn">View Details</a>
+            </div>
 
-    <div class="pet-card">
-    <a href="luna.html">
-        <img src="https://i.pinimg.com/736x/3d/08/f3/3d08f312d3572139716883cb4c4ba94f.jpg" height="200">
-    </a>
-    <p>
-        Name: Luna <br>
-        Age: 1 Year <br>
-        Breed: Domestic Shorthair <br>
-        Personality: Calm, affectionate, and gentle
-    </p>
-    </div>
+            <div class="pet-card">
+                <a href="tommy.html">
+                    <img src="https://i.pinimg.com/736x/29/f7/00/29f7007bdf91df2385e0394b60ed0568.jpg" alt="Tommy the dog">
+                </a>
+                <h3>Tommy</h3>
+                <ul>
+                    <li><b>Age:</b> 4 Years</li>
+                    <li><b>Breed:</b> Mixed</li>
+                    <li><b>Personality:</b> Friendly, loving</li>
+                </ul>
+                <a href="tommy.html" class="btn">View Details</a>
+            </div>
 
-    <div class="pet-card">
-    <a href="bella.html">
-        <img src="https://i.pinimg.com/736x/49/4e/93/494e93198c2a1959772b05777fb2ae8f.jpg" height="200">
-    </a>
-    <p>
-        Name: Bella <br>
-        Age: 3 Years <br>
-        Breed: Domestic Shorthair <br>
-        Personality: Friendly, playful, and calm
-    </p>
-    </div>
+            <div class="pet-card">
+                <a href="luna.html">
+                    <img src="https://i.pinimg.com/736x/3d/08/f3/3d08f312d3572139716883cb4c4ba94f.jpg" alt="Luna the cat">
+                </a>
+                <h3>Luna</h3>
+                <ul>
+                    <li><b>Age:</b> 1 Year</li>
+                    <li><b>Breed:</b> Domestic Shorthair</li>
+                    <li><b>Personality:</b> Calm, affectionate</li>
+                </ul>
+                <a href="luna.html" class="btn">View Details</a>
+            </div>
 
-    <div class="pet-card">
-    <a href="cookie.html">
-        <img src="https://i.pinimg.com/1200x/b4/e1/3d/b4e13d421892a0e0023a7dde6dab3f31.jpg" height="200">
-    </a>
-    <p>
-        Name: Cookie <br>
-        Age: 1 Years <br>
-        Breed: Domestic Shorthair <br>
-        Personality: Friendly, playful, and shy
-    </p>
-    </div>
-</div>
-    <hr>
+            <div class="pet-card">
+                <a href="bella.html">
+                    <img src="https://i.pinimg.com/736x/49/4e/93/494e93198c2a1959772b05777fb2ae8f.jpg" alt="Bella the cat">
+                </a>
+                <h3>Bella</h3>
+                <ul>
+                    <li><b>Age:</b> 3 Years</li>
+                    <li><b>Breed:</b> Domestic Shorthair</li>
+                    <li><b>Personality:</b> Friendly, playful</li>
+                </ul>
+                <a href="bella.html" class="btn">View Details</a>
+            </div>
 
-    <div>
-        <h2 id="services">Our Services</h2>
+            <div class="pet-card">
+                <a href="cookie.html">
+                    <img src="https://i.pinimg.com/1200x/b4/e1/3d/b4e13d421892a0e0023a7dde6dab3f31.jpg" alt="Cookie the cat">
+                </a>
+                <h3>Cookie</h3>
+                <ul>
+                    <li><b>Age:</b> 1 Year</li>
+                    <li><b>Breed:</b> Domestic Shorthair</li>
+                    <li><b>Personality:</b> Playful, shy</li>
+                </ul>
+                <a href="cookie.html" class="btn">View Details</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="info-section" id="services">
+        <h2>Our Services</h2>
         <ul>
             <li>Pet rescue and rehabilitation</li>
             <li>Vaccination and health checkups</li>
             <li>Adoption counseling</li>
-            <li>Basic training guidance for new owners</li>
+            <li>Basic training guidance</li>
         </ul>
-    </div>
+    </section>
 
-    <hr>
-
-    <div>
+    <section class="info-section">
         <h2>Adoption Process</h2>
         <p>
-            The adoption process at Paws is simple and transparent. Interested adopters
-            can visit our center, meet the pets, and complete a short adoption form.
-            Our team provides guidance to ensure a good match between the pet and owner.
+            Interested adopters can visit our center, meet the pets, and complete a short
+            adoption form. Our team ensures a good match between pet and owner.
         </p>
-    </div>
+    </section>
 
-    <hr>
-
-    <div>
+    <section class="info-section">
         <h2>Why Adopt From Paws?</h2>
         <ul>
-            <li>All pets are fully vaccinated</li>
-            <li>Medical history is provided</li>
-            <li>Safe and caring shelter environment</li>
-            <li>Post-adoption support available</li>
+            <li>Fully vaccinated pets</li>
+            <li>Medical history provided</li>
+            <li>Safe and caring environment</li>
+            <li>Post-adoption support</li>
         </ul>
-    </div>
+    </section>
 
-    <hr>
+</main>
 
-    <div>
-        <h2>Opening Hours</h2>
-        <p>
-            Sunday - Friday <br>
-            10:00 AM - 5:00 PM
-        </p>
-    </div>
-
-    <hr>
-    <p>
-        © 2026 Paws Pet Adoption. All rights reserved.
-    </p>
-
-</div>
+<footer class="footer">
+    <p style="color: white;"><b>Opening Hours:</b> Sunday – Friday | 10:00 AM – 5:00 PM</p>
+    <p style="color: white;">© 2026 Paws Pet Adoption. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
