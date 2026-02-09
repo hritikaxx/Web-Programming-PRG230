@@ -29,7 +29,6 @@ body {
     padding: 20px;
 }
 
-/* Mobile first - all elements span full width */
 .container > * {
     grid-column: col-start / span 12;
 }
@@ -95,7 +94,7 @@ p {
     line-height: 1.7;
 }
 
-/* Pet Cards - Mobile first (480px and less = 1 per row = 12 columns) */
+/* Pet Cards*/
 .pet-card {
     background: white;
     border-radius: 20px;
@@ -173,6 +172,7 @@ p {
     border-radius: 10px;
 }
 
+/*Screen Responsive*/
 @media (min-width: 481px) and (max-width: 760px) {
     .pet-card {
         grid-column: span 6;
