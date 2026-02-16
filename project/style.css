@@ -57,6 +57,10 @@ p {
     color: #555;
     line-height: 1.7;
 }
+footer p {
+    color: white;
+}
+
 
 /* Cards */
 .card {
