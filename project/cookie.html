@@ -55,24 +55,50 @@
             box-shadow: 0 4px 12px rgba(201, 138, 91, 0.4);
         }
     </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav class="navbar navbar-expand-lg shadow-sm" style="background-color:#C98A5B;">
-    <div class="container">
-        <a class="navbar-brand text-white fw-bold fs-4" href="#">PAWS</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link text-white px-3" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link text-white px-3" href="index.html#pets">Pets</a></li>
-                <li class="nav-item"><a class="nav-link text-white px-3" href="adoptionform.html">Adoption Form</a></li>
-                <li class="nav-item"><a class="nav-link text-white px-3 active" href="contactus.html">Contact</a></li>
-            </ul>
-        </div>
+  <div class="container">
+    <a class="navbar-brand text-white fw-bold fs-4" href="#">PAWS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link text-white px-3" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link text-white px-3 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Adopt
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="index.html#pets">Browse Pets</a></li>
+            <li><a class="dropdown-item" href="adoption.html">Adoption Form</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-white px-3" href="contact.html">Contact</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link text-white px-3 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Account
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="login.html">Login</a></li>
+            <li><a class="dropdown-item" href="register.html">Register</a></li>
+          </ul>
+        </li>
+
+      </ul>
     </div>
+  </div>
 </nav>
 
 <section class="py-5">

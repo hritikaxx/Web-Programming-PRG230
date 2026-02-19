@@ -42,6 +42,7 @@
       margin-bottom: 0.5rem;
     }
   </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -53,10 +54,35 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link text-white px-3" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link text-white px-3" href="index.html#pets">Pets</a></li>
-        <li class="nav-item"><a class="nav-link text-white px-3" href="adoptionform.html">Adoption Form</a></li>
-        <li class="nav-item"><a class="nav-link text-white px-3 active" href="contactus.html">Contact</a></li>
+
+        <li class="nav-item">
+          <a class="nav-link text-white px-3" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link text-white px-3 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Adopt
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="index.html#pets">Browse Pets</a></li>
+            <li><a class="dropdown-item" href="adoption.html">Adoption Form</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-white px-3" href="contact.html">Contact</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link text-white px-3 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Account
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="login.html">Login</a></li>
+            <li><a class="dropdown-item" href="register.html">Register</a></li>
+          </ul>
+        </li>
+
       </ul>
     </div>
   </div>
@@ -105,21 +131,21 @@
           <form action="#" class="was-validated">
 
             <div class="mb-3">
-              <label class="form-label fw-semibold">Name *</label>
+              <label class="form-label fw-semibold">Name</label>
               <input type="text" class="form-control rounded-3" placeholder="Enter your name" required>
               <div class="valid-feedback">Valid.</div>
               <div class="invalid-feedback">Please enter your name.</div>
             </div>
 
             <div class="mb-3">
-              <label class="form-label fw-semibold">Email *</label>
+              <label class="form-label fw-semibold">Email</label>
               <input type="email" class="form-control rounded-3" placeholder="Enter your email" required>
               <div class="valid-feedback">Valid.</div>
               <div class="invalid-feedback">Please enter a valid email.</div>
             </div>
 
             <div class="mb-4">
-              <label class="form-label fw-semibold">Message *</label>
+              <label class="form-label fw-semibold">Message</label>
               <textarea class="form-control rounded-3" rows="5" placeholder="Write your message here..." required></textarea>
               <div class="valid-feedback">Valid.</div>
               <div class="invalid-feedback">Please write a message.</div>
