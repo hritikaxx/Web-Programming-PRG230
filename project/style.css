@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #F6EFE7;
+    color: #333;
+    position: relative;
+}
+
+/* Background */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("https://static.vecteezy.com/system/resources/previews/031/726/951/non_2x/dog-seamless-pattern-with-paws-bones-hearts-puppy-paws-poster-print-post-card-table-cloth-cloth-shirt-curtain-flannel-foot-towel-illustration-cartoon-kawaii-cute-style-vector.jpg") center/cover no-repeat;
+    opacity: 0.12;
+    z-index: -1;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #C98A5B !important;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+    color: white !important;
+}
+
+.navbar .nav-link:hover {
+    background-color: rgba(255,255,255,0.25);
+    border-radius: 20px;
+}
+
+/* Hero */
+.hero-section {
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    color: #4a2c2a;
+    margin-bottom: 12px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #4a2c2a;
+}
+
+p {
+    color: #555;
+    line-height: 1.7;
+}
+footer p {
+    color: white;
+}
+
+
+/* Cards */
+.card {
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 26px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.card-title {
+    color: #6b3e2e;
+}
+
+/* Buttons */
+.btn-dark {
+    background-color: #C98A5B;
+    border: none;
+    border-radius: 20px;
+}
+
+.btn-dark:hover {
+    opacity: 0.9;
+    background-color: #C98A5B;
+}
+
+/* Info Sections */
+.info-box {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+/* Footer */
+footer {
+    background-color: #875e3e;
+    color: white;
+}
